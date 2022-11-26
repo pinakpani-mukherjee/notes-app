@@ -5,7 +5,7 @@ import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.model.Note
 import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.repository.NoteRepository
 import kotlinx.coroutines.flow.Flow
 
-class noteRepositoryImpl(
+class NoteRepositoryImpl(
     private val dao: NoteDao
 ) : NoteRepository {
     override fun getNotes(): Flow<List<Note>> {
