@@ -16,7 +16,7 @@ class NoteRepositoryImpl(
         return dao.getNoteById(id)
     }
 
-    override suspend fun insetNote(note: Note) {
+    override suspend fun insertNote(note: Note) {
         return dao.insertNote(note)
     }
 
